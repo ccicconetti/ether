@@ -20,7 +20,7 @@ $(VENV_DIR)/bin/activate: requirements.txt requirements-dev.txt
 clean:
 	rm -rf build/
 	rm -rf .eggs/
-	find -iname "*.pyc" -delete
+	find . -iname "*.pyc" -delete
 	rm -rf __pycache__
 	find tests -type d -name "__pycache__" -delete
 	find $(ROOT_DIR) -type d -name "__pycache__" -delete
